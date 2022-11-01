@@ -1,0 +1,188 @@
+/* CSS rules to specify families
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif; */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+
+h1, 
+h2 {
+    font-family: 'Oswald', sans-serif;
+}
+.strong {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+
+/* BANNER IS HERE!!! */
+.banner{
+    background-image: url("../IMAGES/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.bannerText{
+    background-color: rgba(0,0,0 0,.5);
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* .banner p,
+.banner h1 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: 140px;
+    left: 40px;
+    width: auto;
+} */
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 30px;
+
+}
+.navBar {
+    float: right;
+    margin-right: 30px; 
+}
+
+.navBar img {
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+/* HENRY'S VISION SECTION */
+.vision {
+    position: relative;
+    background-color: #010005;
+    height: 100vh;
+    width: 100%
+}
+
+.vision img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 30%;
+    max-width: 50%;
+    max-height: 100%;
+    filter: grayscale(100%);
+    aspect-ratio: 2475/2731;
+}
+
+
+.visionText {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    color: whitesmoke;
+}
+
+/* BOOTSTRAP CAROUSEL */
+
+.works {
+    display: block;
+    background-image: url("../IMAGES/backround2.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    min-height: 50vh;
+    max-height: 100vh;
+    padding-top: 50px;
+}
+
+.works h2 {
+    text-align: center;
+    padding: 0 0 50px 0;
+}
+
+.container {
+    padding: 0;
+    box-shadow: 0 0 30px black;
+    
+}
+.item img { 
+    aspect-ratio: 16/9;
+    height: fit-content;
+    width: auto;
+
+}
+
+/* .carousel .item {
+    max-height: 450px;
+}
+  
+.item img {
+      position: absolute;
+      max-height: 100%;
+      top: 0;
+      left: 0;
+} */
+
+
+/* STAFF SECTION!!! */
+.staff {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    max-width: 100%;
+    color: whitesmoke;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+.card {
+text-align: center;
+max-width: 200px;
+margin: .75%;
+
+
+}
+.card img {
+height: auto;
+max-width: 200px;
+border: 5px solid whitesmoke;
+filter: grayscale(100%);
+
+}
+
+@media only screen and (max-width: 680px) {
+    html {
+        font-size: 12px;
+    }
+
+    .navBar img {
+        height: 20px;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+}
+
